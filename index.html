@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>MyPortfolio<span>.</span></h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home" class="active"><i class="uil uil-estate"></i> Home</a></li>
+        <li><a href="#about"><i class="uil uil-user"></i> About</a></li>
+        <li><a href="#projects"><i class="uil uil-briefcase"></i> Projects</a></li>
+        <li><a href="#contact"><i class="uil uil-envelope"></i> Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-buttons">
+      <a href="#contact" class="btn">Hire Me</a>
+      <a href="AlinafeMtawaliResume.pdf" class="btn" download>Download CV</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <h2>Welcome to My Portfolio</h2>
+      <p>I'm a pa`ssionate web developer.</p>
+      <a href="#projects" class="btn">View Projects</a>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-slider">
+        <div class="about-slide active">
+          <img src="me.jpg" alt="Profile Picture" class="profile-pic" />
+          <p>I specialize in creating responsive and user-friendly websites.</p>
+        </div>
+        <div class="about-slide">
+          <img src="me.jpg" alt="Profile Picture" class="profile-pic" />
+          <p>In my free time, I enjoy learning new technologies and working on personal projects.</p>
+        </div>
+        <div class="about-slide">
+          <img src="me.jpg" alt="Profile Picture" class="profile-pic" />
+          <p>I'm always looking for new challenges and opportunities to grow.</p>
+        </div>
+        <button class="slider-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="slider-btn next" onclick="changeSlide(1)">&#10095;</button>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="project-list">
+        <div class="project-item">
+          <i class="uil uil-laptop"></i>
+          <h3>Project 1</h3>
+          <p>A web application that helps users manage their tasks efficiently.</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project-item">
+          <i class="uil uil-camera"></i>
+          <h3>Project 2</h3>
+          <p>An interactive website showcasing my photography portfolio.</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project-item">
+          <i class="uil uil-shopping-cart"></i>
+          <h3>Project 3</h3>
+          <p>A responsive e-commerce site built with modern web technologies.</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
