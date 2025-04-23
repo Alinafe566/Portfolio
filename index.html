@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!--portfolio-->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Portfolio</title>
@@ -10,7 +11,7 @@
 <body>
   <header>
     <div class="logo">
-      <h1>MyPortfolio<span>.</span></h1>
+      <h1>Alinafe Mtawali<span>.</span></h1>
     </div>
     <nav>
       <ul>
@@ -28,68 +29,115 @@
 
   <main>
     <section id="home" class="hero">
-      <h2>Welcome to My Portfolio</h2>
-      <p>I'm a pa`ssionate web developer.</p>
-      <a href="#projects" class="btn">View Projects</a>
+      <h2>Hi, I'm Alinafe Mtawali</h2>
+      <p class="hero-subtitle">Full Stack Developer & UI/UX Enthusiast</p>
+      <p class="hero-description">I create beautiful, functional, and user-centered digital experiences. Let's build something amazing together!</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary-btn">View My Work</a>
+        <a href="#contact" class="btn secondary-btn">Let's Talk</a>
+      </div>
     </section>
 
     <section id="about">
       <h2>About Me</h2>
-      <div class="about-slider">
-        <div class="about-slide active">
-          <img src="me.jpg" alt="Profile Picture" class="profile-pic" />
-          <p>I specialize in creating responsive and user-friendly websites.</p>
+      <div class="about-content">
+        <div class="about-text">
+          <p>I'm a passionate web developer with a strong focus on creating intuitive and engaging user experiences. With expertise in both front-end and back-end development, I bring ideas to life through clean, efficient code.</p>
+          <div class="skills">
+            <h3>Technical Skills</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">UI/UX Design</span>
+            </div>
+          </div>
         </div>
-        <div class="about-slide">
+        <div class="profile-section">
           <img src="me.jpg" alt="Profile Picture" class="profile-pic" />
-          <p>In my free time, I enjoy learning new technologies and working on personal projects.</p>
+          <p class="profile-quote">"I specialize in creating responsive and user-friendly websites that make a difference."</p>
         </div>
-        <div class="about-slide">
-          <img src="me.jpg" alt="Profile Picture" class="profile-pic" />
-          <p>I'm always looking for new challenges and opportunities to grow.</p>
-        </div>
-        <button class="slider-btn prev" onclick="changeSlide(-1)">&#10094;</button>
-        <button class="slider-btn next" onclick="changeSlide(1)">&#10095;</button>
       </div>
     </section>
 
     <section id="projects">
-      <h2>My Projects</h2>
+      <h2>Featured Projects</h2>
       <div class="project-list">
         <div class="project-item">
           <i class="uil uil-laptop"></i>
-          <h3>Project 1</h3>
-          <p>A web application that helps users manage their tasks efficiently.</p>
-          <a href="#" class="btn">View Project</a>
+          <h3>Task Management App</h3>
+          <p>A full-stack application built with React and Node.js that helps users organize their daily tasks efficiently. Features include task categorization, priority setting, and progress tracking.</p>
+          <div class="project-tech">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn">Live Demo</a>
+            <a href="#" class="btn secondary-btn">View Code</a>
+          </div>
         </div>
         <div class="project-item">
           <i class="uil uil-camera"></i>
-          <h3>Project 2</h3>
-          <p>An interactive website showcasing my photography portfolio.</p>
-          <a href="#" class="btn">View Project</a>
+          <h3>Portfolio Gallery</h3>
+          <p>An interactive photography portfolio website with smooth animations and a responsive design. Includes image filtering, lightbox preview, and social sharing capabilities.</p>
+          <div class="project-tech">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn">Live Demo</a>
+            <a href="#" class="btn secondary-btn">View Code</a>
+          </div>
         </div>
         <div class="project-item">
           <i class="uil uil-shopping-cart"></i>
-          <h3>Project 3</h3>
-          <p>A responsive e-commerce site built with modern web technologies.</p>
-          <a href="#" class="btn">View Project</a>
+          <h3>E-commerce Platform</h3>
+          <p>A complete e-commerce solution with product management, shopping cart, user authentication, and secure payment integration. Built with modern web technologies.</p>
+          <div class="project-tech">
+            <span>React</span>
+            <span>Express</span>
+            <span>MongoDB</span>
+            <span>Stripe</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn">Live Demo</a>
+            <a href="#" class="btn secondary-btn">View Code</a>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="contact">
-      <h2>Contact Me</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
+      <h2>Get In Touch</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Let's Work Together</h3>
+          <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="uil uil-github"></i></a>
+            <a href="#" class="social-link"><i class="uil uil-linkedin"></i></a>
+            <a href="#" class="social-link"><i class="uil uil-twitter"></i></a>
+            <a href="#" class="social-link"><i class="uil uil-envelope"></i></a>
+          </div>
+        </div>
+        <form>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    <p>&copy; 2025 Alinafe Mtawali. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
